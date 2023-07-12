@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Righteous&display=swap');
+
+*{              /*zerando a pagina   */
+	margin: 0px;      /* (borda externa)  */
+	padding: 0px;       /* (borda interna)  */
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: solid #fdfcfb;
+}
+
+.cabecalho{            /* propriedades para o PAI */
+    display: flex;     /* iniciando o flex box */
+    flex-direction: row;  /* modo linha */
+    align-items: center;  /* alinha tudo no centro */
+    justify-content: space-around; /* justificado no centro*/
+    padding: 24px;   /* (se colocar so um numero (24px) ele aplica nas quatro direcoes ou (24px, 0px) Baixa um pouquinho os elementos para nao ficar muito em cima da pagina  */
+}
+
+
+.cabecalho-titulo{
+    color: #a71414;
+}
+
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px; /* afasta um pouco os itens do menu */
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #a71414;
+    font-weight: 400; /* quanto maior, mais em negrito */
+    font-size: 18px; /* tamanho da fonte */
+}
+
+.conteudo{
+    margin-bottom: 48px; /* para dar um espacamento no final do texto e o rodape */
+    border-top: 0.4px solid #a71414;    /*  cria linha divisoria  */
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 48px;  /* cria um espacamento do topo (margem artificial) */ 
+}
+
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Times';
+    font-weight: 300;  /* Peso da fonte (negrito)*/
+    font-size: 24px;
+    color: #f31ab2;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;  /* Peso da fonte (negrito)*/
+    font-size: 19px;
+    color: #d45e5c;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color: #ECD6C4;  /* cor de fundo do botao */
+    width: 180px;  /* Largura do botao */
+    height: 60px;  /* Altura do botao */
+    border: none;  /* Retira totalmente a borda */
+    box-shadow: 4px, 5px, 4px rgba(0, 0, 0, 0.25);  /* Adiciona sombra ao botao */
+    border-radius: 20px;
+    font-family: 'Sarala' sans-serif;
+    font-weight: 400;  /* Peso da fonte (negrito)*/
+    font-size: 20px;
+    color: #a71414;
+}
+
+.conteudo-principal-escrito-botao:hover{  /* chama a pseudo classe hover */
+    background-color: rgba(236, 214, 196, 0.53); /* Quando passa o mouse muda de cor */
+}
+
+
+.conteudo-imagem-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-imagem-principal-1{
+    height: 800px;
+    margin-top: 48px;   /* cria um espacamento do topo (margem artificial) */
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;    /* cria um espacamento entre os elementos */
+    margin-top: 48px;  /* cria um espacamento do topo (margem artificial) */
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #0e0d0d;   /* cria uma LINHA para separar os elementos */
+    padding-top: 48px;  /* afasta um pouco a linha dos elementos */
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #d45e5c;
+    margin-bottom: 16px;  /* cria um espacamento entre os elementos */
+}
+
+.conteudo-secundario-fotos{
+    display: flex;
+    flex-direction: row;
+    gap: 54px; 
+}
+
+.conteudo-secundario-fotos-1{
+    height: 300px;
+}
+
+.conteudo-secundario-texto{
+    font-family: 'Times';
+    color: #d45e5c;
+    text-align: center;
+}
+
+.conteudo-terceario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;    /* cria um espacamento entre os elementos */
+    margin-top: 48px;  /* cria um espacamento do topo (margem artificial) */
+}
+
+.conteudo-terceario-titulo{
+    border-top: 0.4px solid #0e0d0d;   /* cria uma LINHA para separar os elementos */
+    padding-top: 48px;  /* afasta um pouco a linha dos elementos */
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #d45e5c;
+    margin-bottom: 16px;  /* cria um espacamento entre os elementos */
+}
+
+
+.conteudo-terceario-fotos{
+    display: flex;
+    flex-direction: row;
+    gap: 84px;  
+}
+
+.conteudo-terceario-fotos-1{
+    height: 400px;    
+}
+
+.conteudo-terceario-texto{
+    font-family: 'Times';
+    color: #d45e5c;
+}
+
+.conteudo-quarternario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;    /* cria um espacamento entre os elementos */
+    margin-top: 48px;  /* cria um espacamento do topo (margem artificial) */
+}
+
+.conteudo-quarternario-titulo{
+    border-top: 0.4px solid #0e0d0d;   /* cria uma LINHA para separar os elementos */
+    padding-top: 48px;  /* afasta um pouco a linha dos elementos */
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #d45e5c;
+    margin-bottom: 16px;  /* cria um espacamento entre os elementos */
+}
+
+
+.rodape{
+    border-top: 0.4px solid #a71414;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 32px;  /* afasta um pouco o elemento */
+    justify-content: center;    
+}
+
+
+.rodape-escrito{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;  /* Peso da fonte (negrito)*/
+    font-size: 19px;
+    color: #d45e5c;
+    text-align: center;
+}
+
+.rodape-escrito-texto{
+    font-family: Arial;
+    color: #d45e5c;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media(max-width: 1200px){
+    .conteudo-imagem-principal-1{
+    height: 800px;
+    margin-top: 48px;   /* cria um espacamento do topo (margem artificial) */
+    }
+  
+}
+
+@media(max-width: 1024px){
+
+    .conteudo-imagem-principal-1{
+    height: 500px;
+    margin-top: 48px;   /* cria um espacamento do topo (margem artificial) */
+    }
+    .conteudo-secundario-fotos{
+    display: flex;
+    flex-direction: row;
+    gap: 54px; 
+    }
+
+.conteudo-secundario-fotos-1{
+    height: 200px;
+    }
+
+
+}
+
+@media(max-width: 768px){
+     .conteudo-imagem-principal-1{
+    height: 300px;
+    margin-top: 48px;   /* cria um espacamento do topo (margem artificial) */
+    }
+  
+    .conteudo-secundario-fotos{
+    display: flex;
+    flex-direction: column;
+    gap: 54px; 
+    }
+
+    .conteudo-secundario-fotos-1{
+        height: 150px;
+    }
+
+
+
+    .conteudo-terceario-fotos{
+          display: flex;
+          flex-direction: column;
+          gap: 84px;  
+    }
+
+    .conteudo-terceario-fotos-1{
+        height: 200px;    
+    }
+
+}
+
+@media(max-width: 425px){
+    .conteudo-imagem-principal-1{
+        height: 150px;
+   
+    }
+  
+    .conteudo-secundario-fotos{
+        display: flex;
+        flex-direction: column;
+        gap: 54px; 
+    }
+
+    .conteudo-secundario-fotos-1{
+        height: 100px;
+    }
+
+     .conteudo-terceario-fotos{
+          display: flex;
+          flex-direction: column;
+          gap: 84px;  
+    }
+
+    .conteudo-terceario-fotos-1{
+        height: 100px;    
+    }
+
+    .rodape{
+        border-top: 0.4px solid #a71414;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding: 32px;  /* afasta um pouco o elemento */
+        justify-content: center;    
+    }
+
+  
+
+}

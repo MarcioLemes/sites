@@ -1,0 +1,116 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71) );
+}
+
+
+.box{					/* centralizar */
+	color: white;					/* cor da letra */
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	background-color: rgba(0, 0, 0, 0.6);	/* cor do fundo (o ultimo caracter refere-se a tranparencia) */
+	padding: 15px;							/* tipo a largura da borda */
+	border-radius: 15px;					/* arredonda as bordas */
+	width: 50%;								/* define a largura */
+
+}
+
+fieldset{
+	border: 3px solid dodgerblue ;
+}
+
+legend{
+	border: 1px solid dodgerblue;
+	padding: 10px;
+	text-align: center;
+	background-color: dodgerblue;
+	border-radius: 8px;
+
+}
+
+.autorizacao{
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%, 200%);
+	width: 60%;							/* define a largura */
+}
+
+.imputBox{
+	position: relative;
+}
+
+.inputUser{
+	background: none;
+	border: none;					/* retira a borda */
+	border-bottom: 1px solid white;
+	outline: none;
+	color: white;
+	font-size: 15px;
+	width: 100%;					/* largura dos campos dos inputs */
+	letter-spacing: 2px;			/* aumenta o espacamento entre os caracteres */
+} 
+
+.labelInput{
+	position: absolute;
+	top: 0px;  					/*    */
+	left: 0px;	
+	pointer-events: none; 		/* significa que vai executar a ação em qualquer lugar que clicar dentro do campo */
+	 transition: .5s;			/* é "s" mesmo. deixa a transição lenta   */
+}
+
+.inputUser:focus ~ .labelInput,			/*  funçao que quando passa o mouse a letra sobe  */
+.inputUser:valid ~ .labelInput {		/*  funcao que mantem a letra em cima depois de digitado o campo  */
+	top: -20px;							/*  sobe a letra em -20 px  */
+	font-size: 12px;					/*  diminui a letra para 12px  */
+	color: dodgerblue;					/*  muda a cor da letra  */
+}
+
+#data_nascimento{			/* "#" para referenciar os "ID"     */
+	border: none;
+	padding: 8px;
+	border-radius: 10px;	/* para arredondar os cantos   */
+	outline: none;
+	font-size: 15px;
+}	
+
+#data_expedição{			/* "#" para referenciar os "ID"     */
+	border: none;
+	padding: 8px;
+	border-radius: 10px;	/* para arredondar os cantos   */
+	outline: none;
+	font-size: 15px;
+}
+
+#data_de_admissao{			/* "#" para referenciar os "ID"     */
+	border: none;
+	padding: 8px;
+	border-radius: 10px;	/* para arredondar os cantos   */
+	outline: none;
+	font-size: 15px;
+}
+
+#data_de_aposentadoria{
+	border: none;
+	padding: 8px;
+	border-radius: 10px;	/* para arredondar os cantos   */
+	outline: none;
+	font-size: 15px;
+}
+
+#submit{
+	background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220)); 	/*  combinação de dois efeitos  */
+	width: 100%;    		/* largura do botão   */
+	border: none;
+	padding: 15px;			/* engrossa o botao   */
+	color: white;			/* cor da FONTE  */
+	font-size: 15px;		/* tamanho da FONTE  */
+	cursor: pointer;		/* faz o ponteiro virar maozinha  */
+	border-radius: 10px;	/* arredonda os campos do botao  */
+}
+
+#submit:hover{				/* aplica o efeito HOVER no id submit   */
+	background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
